@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdmissionForm</title>
+    <style>
+        h1{
+            color: blueviolet;
+        }
+        h2{
+            color: rgb(45, 101, 232);
+        }
+        body{
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url("sky.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        a{
+            font-size: large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgb(246, 36, 17);
+        }
+        a:hover{
+            color: rgb(246, 255, 0);
+            font-family: cursive;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <form action="">
+        <h1 class="main_heading">Admission Form</h1>
+        <p>Required fields are marked *</p>
+        <p>Name:* <input type="text" placeholder="Enter your Name" name="name" required></p>
+        <fieldset>
+            <legend>Gender*</legend>
+            <p>
+                <label for="Male">
+                    Male<input type="radio" name="gender" id="Male" required>
+                </label>
+                Female<input type="radio" name="gender" id="Female" required>
+            </p>
+        </fieldset>
+        <p>Address: <textarea name="address" placeholder="Enter your address" id="address" cols="100"
+                rows=" 4"></textarea></p>
+        <p>Email :* <input type="email" placeholder="example@gmail.com" name="email" id="email" required></p>
+        <p>Pincode:* <input type="number" name="pincode" placeholder="Enter pincode" id="pincode" required></p>
+        <h2>Educational Information </h2>
+        <p>Class 10th Percentage:*<input type="number" placeholder="XX%" required></p>
+        <p>Class 12th Percentage:*<input type="number" placeholder="XX%" required></p>
+        <p>
+            JEE-Mains Roll Number * : <input type="number" required>
+        </p>
+        <p>
+            JEE-Mains CRL* : <input type="Number" placeholder="21101xxxxx" required>
+        </p>
+        <p>Attach Jee-mains Score Card *<input type="file" name="JEE-mains CRL" required></p>
+        <p>Class 10th Marksheet:*<input type="file" name="Class 10th Marksheet"></p>
+        <p>Class 12th Marksheet:*<input type="file" name="Class 12th Marksheet"></p>
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+</body>
+
+</html>
